@@ -1,3 +1,10 @@
+(fork)
+------
+
+This is a fork of X11Libre that will be kept up to date. Just without the
+obvious agenda ;) This is just a mirror basically, don't expect the code
+from the maintainer to be better than his performance with redhat.
+
 XLibre Xserver
 ===============
 
@@ -12,20 +19,20 @@ Classic "embrace, extend, extinguish" tactics.
 Right after journalists first began covering the planned fork Xlibre,
 on June 6th 2025, Redhat employees started a purge on the Xlibre founder's
 GitLab account on freedesktop.org: deleted the git repo, tickets, merge
-requests, etc, and so fired the shot that the whole world heard.
+requests, etc.
+
+([This is propoganda.](https://news.ycombinator.com/item?id=44223536))
 
 This is an independent project, not at all affiliated with BigTech or any
 of their subsidiaries or tax evasion tools, nor any political activists
-groups, state actors, etc. It's explicitly free of any "DEI" or similar
-discriminatory policies. Anybody who's treating others nicely is welcomed.
+groups, state actors, etc. It's explicitly free of any policies of who can
+contribute. Anybody who's treating others nicely is welcomed.
 
 It doesn't matter which country you're coming from, your political views,
 your race, your sex, your age, your food menu, whether you wear boots or
 heels, whether you're furry or fairy, Conan or McKay, comic character, a
 small furry creature from Alpha Centauri, or just an boring average person.
 Anybody who's interested in bringing X forward is welcome.
-
-Together we'll make X great again!
 
 Upgrade notice
 --------------
