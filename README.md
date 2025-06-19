@@ -8,8 +8,8 @@ from the maintainer to be better than his performance with redhat.
 XLibre Xserver
 ===============
 
-Xlibre is a fork of the Xorg Xserver, with lots of code cleanups
-and enhanced functionality.
+Xlibre is a fork of the [Xorg Xserver](https://gitlab.freedesktop.org/xorg/xserver)
+with lots of code cleanups and enhanced functionality.
 
 This fork was necessary since toxic elements within Xorg projects, moles
 from BigTech, are boycotting any substantial work on Xorg, in order to
@@ -31,7 +31,7 @@ contribute. Anybody who's treating others nicely is welcomed.
 It doesn't matter which country you're coming from, your political views,
 your race, your sex, your age, your food menu, whether you wear boots or
 heels, whether you're furry or fairy, Conan or McKay, comic character, a
-small furry creature from Alpha Centauri, or just an boring average person.
+small furry creature from Alpha Centauri, or just a boring average person.
 Anybody who's interested in bringing X forward is welcome.
 
 Upgrade notice
@@ -42,12 +42,12 @@ Upgrade notice
 
 * If your console is locked up (no input possible, not even VT switch), then
   most likely the input driver couldn't be loaded due to a version mismatch.
-  When unsure, it's best be prepared to ssh into your machine from another one
+  When unsure, it's best to be prepared to ssh into your machine from another one
   or set a timer that's calling `chvt 1` after certain time, so you don't
   need a cold reboot.
 
 * Proprietary Nvidia drivers might break: they still haven't managed to do
-  do even simple cleanups to catch up with Xorg master for about a year.
+  even simple cleanups to catch up with Xorg master for about a year.
   All attempts to get into direct mail contact have failed. We're trying to
   work around this, but cannot give any guarantees.
 
@@ -59,12 +59,13 @@ Driver repositories
 -------------------
 
 Since Redhat had deleted and banned all X11Libre repositories from freedesktop.org,
-the driver repositories are now moved to github:
+the driver repositories are now moved to GitHub:
 
 | Driver | Git repository |
 | --- | --- |
 | xf86-input-elographics:   | https://github.com/X11Libre/xf86-input-elographics    |
 | xf86-input-evdev:         | https://github.com/X11Libre/xf86-input-evdev          |
+| xf86-input-void:          | https://github.com/X11Libre/xf86-input-void           |
 | xf86-input-joystick:      | https://github.com/X11Libre/xf86-input-joystick       |
 | xf86-input-keyboard:      | https://github.com/X11Libre/xf86-input-keyboard       |
 | xf86-input-libinput:      | https://github.com/X11Libre/xf86-input-libinput       |
@@ -83,7 +84,6 @@ the driver repositories are now moved to github:
 | xf86-video-freedreno:     | https://github.com/X11Libre/xf86-video-freedreno      |
 | xf86-video-geode:         | https://github.com/X11Libre/xf86-video-geode          |
 | xf86-video-i128:          | https://github.com/X11Libre/xf86-video-i128           |
-| xf86-video-i740:          | https://github.com/X11Libre/xf86-video-i740           |
 | xf86-video-i740:          | https://github.com/X11Libre/xf86-video-i740           |
 | xf86-video-intel:         | https://github.com/X11Libre/xf86-video-intel          |
 | xf86-video-mach64:        | https://github.com/X11Libre/xf86-video-mach64         |
@@ -109,6 +109,7 @@ the driver repositories are now moved to github:
 | xf86-video-suntcx:        | https://github.com/X11Libre/xf86-video-suntcx         |
 | xf86-video-tdfx:          | https://github.com/X11Libre/xf86-video-tdfx           |
 | xf86-video-trident:       | https://github.com/X11Libre/xf86-video-trident        |
+| xf86-video-vbox:          | https://github.com/X11Libre/xf86-video-vbox           |
 | xf86-video-v4l:           | https://github.com/X11Libre/xf86-video-v4l            |
 | xf86-video-vesa:          | https://github.com/X11Libre/xf86-video-vesa           |
 | xf86-video-vmware:        | https://github.com/X11Libre/xf86-video-vmware         |

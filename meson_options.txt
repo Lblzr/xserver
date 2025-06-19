@@ -2,12 +2,8 @@ option('xorg', type: 'combo', choices: ['true', 'false', 'auto'], value: 'auto',
        description: 'Enable Xorg X Server')
 option('xephyr', type: 'boolean', value: false,
        description: 'Enable Xephyr nested X server')
-option('xwayland', type: 'combo', choices: ['true', 'false', 'auto'], value: 'false',
-       description: 'Enable Xwayland X server')
 option('glamor', type: 'combo', choices: ['true', 'false', 'auto'], value: 'auto',
-       description: 'Enable glamor (default yes for Xorg/Xwayland builds)')
-option('xwayland_ei', type: 'combo', choices: ['socket', 'portal', 'false', 'auto'],
-       value: 'auto', description: 'Enable emulated input support on Xwayland')
+       description: 'Enable glamor (default yes for Xorg builds)')
 option('xnest', type: 'combo', choices: ['true', 'false', 'auto'], value: 'auto',
        description: 'Enable Xnest nested X server')
 option('xvfb', type: 'boolean', value: true,
@@ -47,9 +43,9 @@ option('xkb_default_options', type: 'string')
 
 option('fallback_input_driver', type: 'string', value: 'auto')
 
-option('vendor_name', type: 'string', value: 'The X.Org Foundation')
-option('vendor_name_short', type: 'string', value: 'X.Org')
-option('vendor_web', type: 'string', value: 'http://wiki.x.org')
+option('vendor_name', type: 'string', value: 'XLibre')
+option('vendor_name_short', type: 'string', value: 'XLibre')
+option('vendor_web', type: 'string', value: 'https://github.com/X11Libre/xserver')
 
 option('dtrace', type: 'boolean', value: false,
        description: 'Enable dtrace hooks')
@@ -70,11 +66,11 @@ option('pciaccess', type: 'boolean', value: true,
        description: 'Xorg pciaccess support')
 option('udev', type: 'boolean', value: true)
 option('udev_kms', type: 'boolean', value: true)
-option('hal', type: 'combo', choices: ['true', 'false', 'auto'], value: 'auto',
+option('hal', type: 'combo', choices: ['true', 'false', 'auto'], value: 'false',
        description: 'Enable HAL integration')
-option('systemd_notify', type: 'combo', choices: ['true', 'false', 'auto'], value: 'auto',
+option('systemd_notify', type: 'combo', choices: ['true', 'false', 'auto'], value: 'false',
        description: 'Enable systemd-notify support')
-option('systemd_logind', type: 'combo', choices: ['true', 'false', 'auto'], value: 'auto',
+option('systemd_logind', type: 'combo', choices: ['true', 'false', 'auto'], value: 'false',
        description: 'Enable systemd-logind integration')
 option('vgahw', type: 'combo', choices: ['true', 'false', 'auto'], value: 'auto',
        description: 'Xorg VGA access module')
@@ -140,10 +136,6 @@ option('xpbproxy', type: 'boolean', value: false,
 
 option('libunwind', type: 'boolean', value: false,
         description: 'Use libunwind for backtrace reporting')
-
-option('xwayland-path', type: 'string', description: 'Directory containing Xwayland executable')
-option('libdecor', type: 'combo', choices: ['true', 'false', 'auto'], value: 'auto',
-        description: 'Whether Xwayland should use libdecor when running rootful.')
 
 option('docs', type: 'combo', choices: ['true', 'false', 'auto'], value: 'auto',
         description: 'Build documentation')
